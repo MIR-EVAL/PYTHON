@@ -5,16 +5,16 @@
 # # A = 2; B = 3 -> 8
 
 
-a = int(input('Введите число А: '))
-b = int(input('Введите число B: '))
-def recursion(a, b):
-    if b == 0:
-        return 1
-    if b % 2 == 0:
-        return recursion(a, b//2)* recursion(a, b//2)
-    else:
-        return recursion(a, b - 1)* a
-print(recursion(a,b))
+# a = int(input('Введите число А: '))
+# b = int(input('Введите число B: '))
+# def recursion(a, b):
+#     if b == 0:
+#         return 1
+#     if b % 2 == 0:
+#         return recursion(a, b//2)* recursion(a, b//2)
+#     else:
+#         return recursion(a, b - 1)* a
+# print(recursion(a,b))
 
 
 # Задача 28: 
@@ -23,12 +23,12 @@ print(recursion(a,b))
 # 2 2
 # 4
 
-# a = int(input('Введите число a: '))
-# b = int(input('Введите число b: '))
+a = int(input('Введите число a: '))
+b = int(input('Введите число b: '))
  
-# def rec_sum(a, b):
-#     if b == 0:
-#         return a
-#     return rec_sum(a + 1, b - 1)
+def rec_sum(a, b):
+    if b == 0:
+        return a
+    return rec_sum(a + 1, b - 1)
  
-# print(rec_sum(a, b))
+print(rec_sum(a, b))
